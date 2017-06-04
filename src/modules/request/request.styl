@@ -1,0 +1,64 @@
+.wrapper
+  z-index: 1
+  roundPlash(#7633b7, 'sprite-arrow-down-white.svg')
+
+.container
+  background-image linear-gradient(to bottom, #7633b7, #275fbb)
+  padding: 2em 0
+  text-align: center
+
+.title
+  color: $white
+  font-size: 2.6em
+  fontSerif()
+  letter-spacing: 1px
+
+.subtitle
+  color: $white
+  letter-spacing: 1px
+
+.form
+  display: block
+  max-width: 880px + $gutter
+  margin: 2em auto 0
+  text-align: justify
+  padding: 0 $gutter-half
+  cf()
+
+.input,
+.left,
+.right
+  @media (max-width: $breakpoint-sm - 1)
+    display: block
+    max-width 320px
+    margin: 0 auto 1em
+    text-align: center
+
+.left,
+.right
+  width: 33.333%
+  float: right
+  @media (max-width: $breakpoint-sm - 1)
+    float: none
+    width: auto
+
+.right
+  padding-left: $gutter
+
+  @media (max-width: $breakpoint-sm - 1)
+    padding-left: 0
+
+.center
+  margin: 0 33.333%
+  text-align: center
+
+  @media (max-width: $breakpoint-sm - 1)
+    margin: 0
+
+.row
+  width: 100%
+  display: inline-block
+  margin-top: 2em
+
+  @media (max-width: $breakpoint-sm - 1)
+    margin-top: 0

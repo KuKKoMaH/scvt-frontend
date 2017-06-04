@@ -1,0 +1,70 @@
+$circle_radius = -10px
+
+.wrapper
+  z-index: 1
+  roundPlash(#ff5542, 'sprite-arrow-down-white.svg')
+
+.container
+  background: linear-gradient(to top, #feb984, #ff8662 51%, #ff8662 51%, #ff5542)
+  color: $white
+  padding-bottom: 5em
+  position: relative
+
+.title
+  padding: 1em 0
+
+.subtitle
+  text-align: center
+  font-size: 1.2em
+
+.item
+  margin-top: 3em
+  display: block
+  text-decoration: none
+
+  &:hover
+    .name
+      text-decoration: none
+
+    .image:after
+      top: $circle_radius
+      right: $circle_radius
+      bottom: $circle_radius
+      left: $circle_radius
+
+.image
+  width: 238px
+  height: 238px
+  position: relative
+  background: $white
+  border-radius: 50%
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.15)
+  margin: 0 auto
+
+
+
+  &:after
+    content: ''
+    display: block
+    border-radius: 50%
+    border: 1px solid $white
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    anim()
+
+  img
+    max-width: none
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+
+.name
+  margin-top: 1em
+  font-weight: bold
+  text-decoration: underline
+  text-align: center

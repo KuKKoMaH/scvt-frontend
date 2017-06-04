@@ -1,0 +1,11 @@
+mixin button(tag)
+  - if(!tag) tag = 'button'
+  - var className = 'button-button' + (fill ? ' button-fill' : '')
+  #{tag}.button-button&attributes(attributes)
+    if(block)
+      block
+
+mixin button_flat()
+  button.button-flat&attributes(attributes)
+    if(block)
+      block

@@ -1,0 +1,112 @@
+.wrapper
+  z-index: 1
+  roundPlash(#F9F6F2, 'sprite-arrow-down-red.svg')
+
+.container
+  background: #F9F6F2
+  padding: 2em 0 4em
+
+.header
+  color: $red
+
+  h2:before
+    font-size: 2.5em
+    opacity: .05
+
+.subheader
+  text-align: center
+  margin: 1em 0 2em
+  font-size: 1.2em
+
+.item
+  border-radius: 8px
+  max-width: 270px
+  height: 300px
+  padding: 1em
+  color: $white
+  text-align: left
+  margin: 0 auto
+  margin-bottom: $gutter
+  cursor: pointer
+  anim()
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    font-size: .9em
+
+  &:hover
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent
+    transform: translateY(6px)
+
+.item-1
+  background-image linear-gradient(139deg, #ffcd2c, #ff0663)
+  box-shadow: 0 21px 21px -13px rgba(#ff0d61, .7), 0 21px 21px -13px rgba(#ff2d58, .7)
+
+.item-2
+  background-image linear-gradient(139deg, #5f86ec, #7c4cb0)
+  box-shadow 0 21px 21px -13px rgba(0, 0, 0, 0.15), 0 21px 21px -13px rgba(#7b4fb3, .7)
+
+.item-3
+  background-image linear-gradient(to bottom, #b4ed50, #429321)
+  box-shadow 0 21px 21px -13px rgba(0, 0, 0, 0.15), 0 21px 21px -13px rgba(#7ed321, .7)
+
+.item-4
+  background-image linear-gradient(139deg, #ffd529, #fead34 50%, #fd8440)
+  box-shadow 0 21px 21px -13px rgba(0, 0, 0, 0.15), 0 21px 21px -13px rgba(#fd8c3e, .7)
+
+
+.icon
+  text-align: center
+  height: 160px
+  line-height: 160px
+  font-size: 0
+  color: #fff
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    height: 130px
+    line-height: 130px
+
+  img
+    display: inline-block
+    vertical-align: middle
+
+.title
+  font-weight: 700
+
+.text
+  font-size: .9em
+  margin-top: .5em
+
+.details
+  max-width: 620px
+  margin: 0 auto
+  position: relative
+  margin-top: 2em
+
+.detail
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  opacity: 0
+  transition: all .1s ease-out
+
+  &_active
+    opacity: 1
+    z-index: 1
+    position: relative
+
+  &-icon
+    float: left
+    width: 170px
+    text-align: center
+
+  &-content
+    font-size: .9em
+    margin-left: 170px
+
+  &-title
+    font-weight: 700
+
+  &-text
+    margin-top: .5em
+    line-height: 1.2

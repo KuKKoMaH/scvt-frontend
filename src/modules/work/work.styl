@@ -1,0 +1,79 @@
+.wrapper
+  padding: 2em 0
+  text-align: center
+
+  :global(.c:first-child) .icon:after
+    display: none
+
+.title
+  color: $red
+
+  h2:before
+    opacity: .05
+    font-size: 2.5em
+
+.subtitle
+  font-size: 1.2em
+  margin-top: 1em
+  margin-bottom: 3em
+
+$circle-radius = -10px
+.icon
+  position: relative
+  width: 95px
+  height: 95px
+  line-height: 95px
+  font-size: 0
+  border-radius: 50%
+  background-image linear-gradient(to left, #feb984, #ff5542)
+  box-shadow -23px 8px 10px 0 rgba(232, 127, 4, 0.24)
+  margin: 0 auto
+
+  &:before
+    content: ''
+    position: absolute
+    border solid 1px #f5a623
+    border-radius: 50%
+    top: $circle-radius
+    right: $circle-radius
+    bottom: $circle-radius
+    left: $circle-radius
+
+  &:after
+    content: ''
+    position: absolute
+    height: 1px
+    background-color #f5a623
+    right: 100%
+    margin-right: 30px
+    top: 50px
+    width: 235px
+
+    @media (max-width: $breakpoint-lg - 1)
+      width: 170px
+    @media (max-width: $breakpoint-md - 1)
+      width: 100px
+    @media (max-width: $breakpoint-sm - 1)
+      display: none
+
+  > *
+    display: inline-block
+    vertical-align: middle
+
+
+.icon-1
+  background: url(modules/work/sprite-work-1.svg)
+.icon-2
+  background: url(modules/work/sprite-work-2.svg)
+.icon-3
+  background: url(modules/work/sprite-work-3.svg)
+
+.name
+  font-size: 1.2em
+  margin-top: 1.5em
+
+.text
+  font-size: .8em
+  margin-top: 2em
+  padding: 0 1em
+  margin-bottom: 3em

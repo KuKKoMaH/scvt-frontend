@@ -1,0 +1,60 @@
+.wrapper
+  background: #d2cec8
+  padding-top: 2em
+
+.content
+  position: relative
+  margin-bottom: 2em
+
+.title
+  cf()
+  margin-bottom: 2em
+
+.title-text
+  line-height: 1.2
+  padding-top: 6px
+
+.logo
+  float: left
+  margin-right: $gutter
+
+.copyright
+  font-size: .7em
+  margin-bottom: 4em
+
+.politic
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+
+.top
+  line-height: 1.2
+  color: $red
+  text-decoration: underline
+  cursor: pointer
+
+  &:hover
+    text-decoration: none
+
+  &:before
+    content: ''
+    float: left
+    margin-right: 8px
+    background: url(sprites/sprite-to-top.svg)
+
+.map
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 580px
+  height: 430px
+  background: $white
+  z-index: 1
+
+  &:before
+    content: ''
+    display: block
+    background: url(modules/footer/girl.png)
+    width: 413px
+    height: 598px

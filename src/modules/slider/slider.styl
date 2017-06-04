@@ -1,0 +1,163 @@
+@import "slick-carousel/slick/slick.css"
+//@import "slick-carousel/slick/slick-theme.css"
+
+.item
+  @media (max-width: $breakpoint-sm - 1)
+    padding-left: 20px
+    padding-right: 20px
+
+.image
+  display: block
+  margin: 0 auto
+  @media (max-width: $breakpoint-sm - 1)
+    display: none !important
+
+.content
+  margin-top: 3em
+
+  @media (max-width: $breakpoint-md - 1)
+    br
+      display: none
+
+  @media (max-width: $breakpoint-sm - 1)
+    text-align: center
+
+.title
+  fontSerif()
+  font-size: 3.2em
+  line-height: 1.1
+  font-weight: 700
+  color: $red
+
+  @media (max-width: $breakpoint-md - 1)
+    font-size: 2.5em
+
+.subtitle
+  font-weight: 700
+  font-size: 1.25em
+  margin-top: 2em
+
+  @media (max-width: $breakpoint-md - 1)
+    font-size: 1em
+
+
+.text
+  margin-top: 1em
+
+  &:before
+    content: ''
+    display: block
+    width: 130px
+    height: 2px
+    background: $red
+    margin-bottom: 1em
+
+    @media (max-width: $breakpoint-sm - 1)
+      margin: 0 auto 1em
+
+
+.button
+  margin-top: 2em
+  padding-bottom: 1em
+
+.block
+  position: relative
+  margin-bottom: 3em
+
+  :global
+    .slick-arrow
+      position: absolute
+      top: 50%
+      font-size: 0
+      border: 0
+      padding: 0
+      background-color: transparent
+      margin-top: -40px
+      anim()
+
+      &:hover
+        opacity: .8
+
+    .slick-prev
+      right: 50%
+      margin-right: 570px
+      background: url(modules/slider/sprite-arrow-left.svg)
+
+      @media (max-width: $breakpoint-lg - 1)
+        margin-right: 465px
+
+      @media (max-width: $breakpoint-md - 1)
+        margin-right: 360px
+
+      @media (max-width: $breakpoint-sm - 1)
+        right: auto
+        margin-right: auto
+        left: 0
+
+    .slick-next
+      left: 50%
+      margin-left: 570px
+      background: url(modules/slider/sprite-arrow-right.svg)
+
+      @media (max-width: $breakpoint-lg - 1)
+        margin-left: 465px
+
+      @media (max-width: $breakpoint-md - 1)
+        margin-left: 360px
+
+        @media (max-width: $breakpoint-sm - 1)
+          left: auto
+          margin-left: auto
+          right: 0
+
+    .slick-dots
+      position: absolute
+      right: 50%
+      bottom: 3em
+      padding: 0
+      margin-right: -520px
+
+      @media (max-width: $breakpoint-lg - 1)
+        margin-right: -430px
+        bottom: 2em
+
+      @media (max-width: $breakpoint-md - 1)
+        margin-right: -350px
+        bottom: 0em
+
+      @media (max-width: $breakpoint-sm - 1)
+        position: relative
+        display: block
+        width: 100%
+        bottom: 0
+        margin: 0
+        right: 0
+        text-align: center
+
+      li
+        display: inline-block
+        vertical-align: middle
+        width: 18px
+        height: 18px
+        line-height: 18px
+        font-size: 0
+        margin: 0 4px
+        text-align: center
+
+        &.slick-active button
+          background: $red
+          border-color: $red
+          width: 18px
+          height: 18px
+
+      button
+        width: 12px
+        height: 12px
+        background-color: transparent
+        border-radius: 50%
+        border: 2px solid $grey
+        text-indent: -99999px
+        padding: 0
+        display: inline-block
+        vertical-align: middle
+        anim()

@@ -1,0 +1,42 @@
+$pressure = 6px
+
+.button
+  display: inline-block
+  text-align: center
+  background: #7ED321
+  text-transform: uppercase
+  font-weight: 700
+  color: $white
+  font-size: .8em
+  line-height: 1
+  letter-spacing: 1px
+  text-decoration: none
+  margin: 0
+  padding: 23px 31px
+  box-shadow: 0 18px 17px -13px rgba(#7ED321, .7)
+  cursor: pointer
+  outline: 0
+  border-radius: 31px
+  border: 0
+  margin-bottom: $pressure
+  anim()
+
+  &:hover
+    background-color: #6DBB19
+    box-shadow: 0 20px 17px -13px rgba(#6DBB19, .7)
+
+  &:active
+    background-color: #6DBB19
+    box-shadow: 0 0 0 0 rgba(#6DBB19, .7)
+    transform: translateY($pressure)
+
+.flat
+  border: 0
+  padding: 0
+  margin: 0
+  color: $green
+  font-size: 11px
+  background-color: transparent
+  border-bottom: 2px solid $green
+  padding-bottom: 2px
+  anim()

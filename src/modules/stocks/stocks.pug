@@ -1,0 +1,18 @@
+- var items = ['Скидка растет!', 'Уже на второй заказ!', 'Большая скидка 15%', 'Скидка от объёма!']
+.stocks-wrapper: .stocks-container
+  .stocks-header: h2(data-subtitle='Скидки') Акции и скидки
+  .stocks-subheader Мы всегда радуем наших клиентов!
+  .w
+    for item, i in items
+      .c.c3.c6-sm
+        .stocks-item(class='stocks-item-' + (i + 1) data-target=i)
+          .stocks-icon: img(src='modules/stocks/icons/stocks-icon-' + (i + 1) + '.svg')
+          .stocks-title= item
+          .stocks-text Накопительная скидка для вас и ваших друзей.
+  .stocks-details
+    for item, i in items
+      .stocks-detail(class=i === 0 ? 'stocks-detail_active' : '' data-tab=i)
+        .stocks-detail-icon: img(src='modules/stocks/icons/stocks-icon-' + (i + 1) + '-active.svg')
+        .stocks-detail-content
+          .stocks-detail-title= item
+          .stocks-detail-text Здесь есть и накопительная система, и возможность получить сразу существенную скидку при большом объеме.

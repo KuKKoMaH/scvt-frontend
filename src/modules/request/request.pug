@@ -1,0 +1,33 @@
+include ../input/input
+include ../button/button
+include ../file/file
+include ../select/select
+
+.request-wrapper
+  .request-container
+    .request-title Оставьте заявку
+    .request-subtitle наш консультант свяжется с вами в ближайшее время
+    form.request-form
+      .wf
+        .c.c4.request-input
+          +input()(placeholder='Ваше имя')
+        .c.c4.request-input
+          +input()(placeholder='Телефон')
+        .c.c4.request-input
+          +input()(placeholder='Почта')
+      .request-row
+        .request-left
+          +select()
+            option Классические картины
+            option Модульные картины
+            option Фотографии
+            option Фотомозайка
+            option Репродукции Художников
+            option Поп - Арт
+            option Арт - портреты
+            option Фотопанно
+        .request-right
+          +file()
+
+        .request-center
+          +button() отправить

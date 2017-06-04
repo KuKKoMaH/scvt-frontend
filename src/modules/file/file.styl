@@ -1,0 +1,39 @@
+.wrapper
+  position: relative
+  overflow: hidden
+  height: 40px
+  line-height: 40px
+  color: $white
+  margin: 1em 0
+  font-size: 15px
+  text-align: left
+
+  &:hover
+    .file_name
+      text-decoration: none
+
+  &:before
+    content: ' '
+    background: url(sprites/sprite-file-white.svg)
+    position: absolute
+    top: 7px
+
+.input
+  position: absolute
+  opacity: 0
+  width: 200%
+  height: 200%
+  right: 0
+  top: 0
+  cursor: pointer
+
+.name
+  font-weight: bold
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding-left: 30px
+
+.black
+  &:before
+    background: url(sprites/sprite-file-black.svg)

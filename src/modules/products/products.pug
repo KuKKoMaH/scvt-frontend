@@ -1,0 +1,10 @@
+- var items = ['Классические картины', 'Модульные картины', 'Фотографии', 'Фотомозайка', 'Репродукции Художников', 'Поп - Арт', 'Арт - портреты', 'Фотопанно']
+.products-wrapper: .products-container
+  .products-title: h2(data-subtitle='Продукция') Продукция
+  .products-subtitle Создавая шедевры
+  .w
+    for item, i in items
+      .c.c3.c4-md.c6-sm
+        a.products-item(href='#')
+          .products-image: img(src='modules/products/img/product-' + (i + 1) + '.png')
+          .products-name= item

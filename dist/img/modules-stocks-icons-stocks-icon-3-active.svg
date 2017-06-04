@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>stocks-icon-3-active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="stocks-icon-3-active" fill-rule="nonzero" fill="#FF5844">
+            <path d="M56,21.1674419 L46.1784615,41.4744186 L23.7784615,44.572093 L40.1476923,60.2325581 L36.1846154,82.4325581 L56.1723077,71.7627907 L76.16,82.4325581 L72.0246154,60.2325581 L88.3938462,44.572093 L65.9938462,41.4744186 L56,21.1674419 Z M69.0953846,59.372093 L72.3692308,77.6139535 L56,68.8372093 L39.6307692,77.6139535 L42.9046154,59.372093 L29.4646154,46.4651163 L47.9015385,43.8837209 L56,27.1906977 L64.0984615,43.8837209 L82.5353846,46.4651163 L69.0953846,59.372093 Z" id="Shape"></path>
+            <polygon id="Rectangle-path" points="54.6215385 0 57.2061538 0 57.2061538 11.0139535 54.6215385 11.0139535"></polygon>
+            <polygon id="Rectangle-path" points="29.2385319 6.85075342 34.752378 16.400735 32.5168897 17.6914326 27.0030435 8.14145109"></polygon>
+            <polygon id="Rectangle-path" points="16.3984665 34.5683184 6.84848501 29.0544723 8.13918268 26.8189839 17.6891642 32.3328301"></polygon>
+            <polygon id="Rectangle-path" points="0 54.5534884 11.0276923 54.5534884 11.0276923 57.1348837 0 57.1348837"></polygon>
+            <polygon id="Rectangle-path" points="8.23433045 85.0869385 6.94202275 82.8486615 16.4801065 77.3416848 17.7724142 79.5799617"></polygon>
+            <polygon id="Rectangle-path" points="29.0990883 105.020555 26.8608114 103.727989 32.3688895 94.1899055 34.6071665 95.4824717"></polygon>
+            <polygon id="Rectangle-path" points="54.6215385 100.846512 57.2061538 100.846512 57.2061538 111.860465 54.6215385 111.860465"></polygon>
+            <polygon id="Rectangle-path" points="82.8007543 105.027609 77.2869081 95.4776278 79.5223965 94.1869302 85.0362426 103.736912"></polygon>
+            <polygon id="Rectangle-path" points="103.864436 85.0438905 94.3144542 79.5300444 95.6051519 77.294556 105.155133 82.8084021"></polygon>
+            <polygon id="Rectangle-path" points="100.972308 54.5534884 112 54.5534884 112 57.1348837 100.972308 57.1348837"></polygon>
+            <polygon id="Rectangle-path" points="103.74551 26.8160336 105.037817 29.0543106 95.4997335 34.5612873 94.2074258 32.3230104"></polygon>
+            <polygon id="Rectangle-path" points="82.8877818 6.7991753 85.1260588 8.09174145 79.6179806 17.6298252 77.3797037 16.337259"></polygon>
+        </g>
+    </g>
+</svg>

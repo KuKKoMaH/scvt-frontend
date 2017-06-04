@@ -1,0 +1,13 @@
+include ../button/button
+
+.slider-block
+  for item in [1,2,3]
+    .slider-item
+      .w
+        .c.c5: img.slider-image(data-lazy='modules/slider/image.jpg')
+        .c.c6
+          .slider-content
+            .slider-title Изготовление картин на заказ
+            .slider-subtitle Модульные, Pop-art, Классические,#[br] Фотомозайки и многое другое
+            .slider-text Лучший подарок - это картина,#[br]созданная по фотографии
+            .slider-button: +button('a')(href='#') Смотреть примеры
