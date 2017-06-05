@@ -1,0 +1,137 @@
+.wrapper
+  padding-top: 1em
+  padding-bottom: 4em
+
+.title
+  h2
+    color: $red
+
+    &:before
+      font-size: 2.5em
+      opacity: .03
+
+.subtitle
+  text-align: center
+  margin: 1em 0 3em
+  padding 0 $gutter-half
+
+.content
+  position: relative
+
+  &:before, &:after
+    content: ''
+    display: block
+    position: absolute
+    height: 1px
+    width: 100%
+    background: #d7d7d7
+    z-index: -1
+
+    @media (max-width: $breakpoint-lg - 1)
+      display: none
+
+  &:before
+    top: $gutter-half
+  &:after
+    bottom: $gutter-half
+
+.menu
+  padding: $gutter 0
+
+  @media (max-width: $breakpoint-lg - 1)
+    padding: 0
+
+  ul
+    padding: 0
+    margin: 0
+  li
+    list-style: none
+    font-size: .8em
+    font-weight: 700
+    margin-bottom: 1em
+    text-transform: uppercase
+  a
+    display: inline-block
+    padding-bottom: 4px
+    text-decoration: none
+    border-bottom: 2px solid transparent
+    anim()
+
+    &:hover
+      color: $red
+      border-bottom: 2px solid $red
+
+.slider
+  img
+    height: auto
+
+  :global
+    .slick-dots
+      position: absolute
+      display: block
+      width: 100%
+      margin: 0
+      text-align: center
+      padding: 0
+
+      li
+        display: inline-block
+        vertical-align: middle
+        width: 18px
+        height: 18px
+        line-height: 18px
+        font-size: 0
+        margin: 0 4px
+        text-align: center
+
+        &.slick-active button
+          background: $red
+          border-color: $red
+          width: 18px
+          height: 18px
+
+      button
+        width: 12px
+        height: 12px
+        background-color: $grey
+        border-radius: 50%
+        border: 2px solid $grey
+        text-indent: -99999px
+        padding: 0
+        display: inline-block
+        vertical-align: middle
+        anim()
+
+.footer
+  padding-top: 3em
+
+  @media (max-width: $breakpoint-lg - 1)
+    padding-top: 0
+
+.text
+  font-size: .8em
+
+  p
+    margin: 0 0 1.5em
+
+.button
+  text-align: center
+
+.params
+  font-size: .8em
+
+  @media (max-width: $breakpoint-lg - 1)
+    padding-top: 3em
+
+  p
+    margin: 0 0 .5em
+
+  b
+    margin-right: 8px
+
+  ul
+    margin: 0
+    padding: 0 0 0 20px
+
+  li
+    padding-bottom: .5em

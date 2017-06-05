@@ -2,14 +2,18 @@
   .w.footer-content
     .footer-map
       .footer-girl
-      #map
-    .c.c3
+      #map(data-lat='59.882731' data-lng='30.370441' data-zoom='16' data-original='https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A5e4cd2bc305096fbc0b93e48d8e4992cb0111e7238c42891bb6bd0e15930f369&amp;width=580&amp;height=450&amp;lang=ru_RU')
+    .c.c3.c5-sm
       .footer-title
         img.footer-logo(src='modules/header/logo.png')
         .footer-title-text Мастерская Соцветие
 
-      .footer-copyright
+      .footer-text
+        |Мы в социальных сетях:#[br]
+        .footer-socials
+          for icon in ['vk', 'fb', 'ok', 'ins']
+            a.footer-social(class='footer-' + icon)
         |Мастерская Соцветие 2017©
         .footer-politic Политика конфиденциальности
 
-      .footer-top В начало#[br]сайта
+      a.footer-top(href='#header') В начало#[br]сайта

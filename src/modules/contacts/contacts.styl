@@ -1,5 +1,5 @@
 .wrapper
-  z-index: 1
+  z-index: -1
   roundPlash(#F9F6F2, 'sprite-arrow-down-red.svg')
 
 .container
@@ -18,5 +18,12 @@
   float: left
   font-weight: 700
 
+  @media (max-width: $breakpoint-sm - 1)
+    float: none
+
 .value
   margin-left: 150px
+
+  @media (max-width: $breakpoint-sm - 1)
+    margin-left: 0
+    margin-bottom: 1em

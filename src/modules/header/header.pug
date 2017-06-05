@@ -1,7 +1,7 @@
 include ../button/button
 
 - var menu = ['Продукция', 'Акции', 'О нас', 'Блог', 'Контакты']
-header.header-wrapper: .w.wc
+header.header-wrapper#header: .w.wc
   .c.c1.c4-xs: img.header-logo(src='modules/header/logo.png')
   .c.c2.c7-xs: .header-title Мастерская Соцветие
   .c.c6
@@ -13,4 +13,4 @@ header.header-wrapper: .w.wc
   .c.c3
     .header-contacts
       .header-phone 8 812 602 13 82
-      +button_flat() заказать звонок
+      +button_flat(class='header-callback' href='#callback') заказать звонок

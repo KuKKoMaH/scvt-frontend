@@ -1,0 +1,19 @@
+.sizes-wrapper: .sizes-container
+  .sizes-header: h2(data-subtitle='Выбирай') Размеры
+  .w
+    .c.c12: .sizes-content
+      .sizes-left
+        .sizes-title Высота
+        for size, i in ['30', '40', '50', '60', '70']
+          label.sizes-list
+            input(type='radio' name='height' value=size checked=i==0 ? 'checked' : '')
+            .sizes-name=size
+      .sizes-right
+        .sizes-title Ширина
+        for size, i in ['30', '40', '50', '60', '70']
+          label.sizes-list
+            input(type='radio' name='width' value=size checked=i==0 ? 'checked' : '')
+            .sizes-name=size
+      .sizes-center
+        img(src='modules/sizes/bg.jpg')
+        .sizes-picture(style='background-image: url(modules/sizes/picture.png)')

@@ -34,19 +34,27 @@
     margin: 0 auto 1em
     text-align: center
 
-.left,
-.right
-  width: 33.333%
-  float: right
+.left
+  float: left
+  text-align: center
+  padding-right: $gutter
+
   @media (max-width: $breakpoint-sm - 1)
-    float: none
-    width: auto
+    padding-right: 0
 
 .right
+  float: right
   padding-left: $gutter
 
   @media (max-width: $breakpoint-sm - 1)
     padding-left: 0
+
+.left,
+.right
+  width: 33.333%
+  @media (max-width: $breakpoint-sm - 1)
+    float: none
+    width: auto
 
 .center
   margin: 0 33.333%

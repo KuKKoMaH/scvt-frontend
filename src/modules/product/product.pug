@@ -1,0 +1,43 @@
+include ../button/button
+
+.product-wrapper
+  .product-title: h2(data-subtitle='Картины') Модульные картины
+  .product-subtitle Актуально для дизайна интерьера и для подарка!
+  .w.product-content.wc
+    .c.c3
+      .product-menu: ul
+        li: a(href='#') Классические картины
+        li: a(href='#') Модульные картины
+        li: a(href='#') Фотографии
+        li: a(href='#') Фотомозайка
+        li: a(href='#') Репродукции
+        li: a(href='#') Поп-арт
+        li: a(href='#') Арт-портреты
+        li: a(href='#') Фотопанно
+    .c.c6
+      .product-slider
+        img(src='modules/product/image.jpg')
+        img(src='modules/product/image.jpg')
+        img(src='modules/product/image.jpg')
+        img(src='modules/product/image.jpg')
+    .c.c3
+      .product-params
+        p #[b Изготовление:] 1 день
+        p #[b Холст:] Натуральный
+        p #[b Печать:] Высококачественная
+
+        ul
+          li Влагостойкие
+          li Стойкие к выцветанию
+          li Без неприятного запаха
+          li Бесплатная доставка
+
+
+  .product-footer: .w
+    .c.c9
+      .product-text
+        p Напечатанные на холсте картины практичны, оригинальны и дешевле своих масляных "собратьев". Благодаря им вы сможете выразить свое отношение к жизни, показать изысканный вкус и наполнить дом нужной атмосферой без особых материальных затрат.
+        p Модульная картина - обычно это единое полотно, как бы разбитое и заново собранное из нескольких блоков, а её части связаны между собой единой сюжетной линией.
+    .c.c3
+      .product-button
+        +button('a')(href='#') Перейти к заказу

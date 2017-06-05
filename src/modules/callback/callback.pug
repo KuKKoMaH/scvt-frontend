@@ -1,0 +1,13 @@
+include ../input/input
+include ../button/button
+
+.callback-wrapper#callback
+  .callback-content
+    .callback-title Заказать звонок
+    .callback-text  Заполните поля, мы свяжемся с вами в ближайшее время
+    form
+      .callback-input
+        +input()(placeholder='Ваше имя')
+      .callback-input
+        +input()(type='phone' placeholder='Телефон')
+      +button('input')(type='submit' value='Отправить')

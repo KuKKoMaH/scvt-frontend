@@ -2,6 +2,14 @@
 //@import "slick-carousel/slick/slick-theme.css"
 
 .item
+  position: absolute
+  overflow: hidden
+  &:first-child
+    position: static
+
+  &:global(.slick-slide)
+    position: static
+
   @media (max-width: $breakpoint-sm - 1)
     padding-left: 20px
     padding-right: 20px
@@ -9,6 +17,8 @@
 .image
   display: block
   margin: 0 auto
+  width: auto
+  height: auto
   @media (max-width: $breakpoint-sm - 1)
     display: none !important
 
@@ -32,6 +42,9 @@
   @media (max-width: $breakpoint-md - 1)
     font-size: 2.5em
 
+  @media (max-width: $breakpoint-sm - 1)
+    font-size: 1.5em
+
 .subtitle
   font-weight: 700
   font-size: 1.25em
@@ -39,6 +52,9 @@
 
   @media (max-width: $breakpoint-md - 1)
     font-size: 1em
+
+  @media (max-width: $breakpoint-sm - 1)
+    font-size: .9em
 
 
 .text
@@ -63,8 +79,12 @@
 .block
   position: relative
   margin-bottom: 3em
+  overflow: hidden
 
   :global
+    .slick-slide
+      outline: 0
+
     .slick-arrow
       position: absolute
       top: 50%

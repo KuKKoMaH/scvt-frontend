@@ -1,0 +1,52 @@
+@import "magnific-popup/dist/magnific-popup.css"
+
+.wrapper
+  margin: 0 auto
+  max-width: 360px
+  background-image: linear-gradient(to top, #feb984, #ff5542)
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.5)
+  padding: 1.5em
+  border-radius: 6px
+  text-align: center
+  color: $white
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    background: url(modules/callback/sprite-callback.svg)
+    opacity: .3
+    left: 50%
+    transform: translateX(-50%)
+
+  :global(.mfp-close)
+    position: absolute
+    right: 0
+    top: 0
+    background: url(sprites/sprite-close.svg)
+    opacity: .3
+    cursor: pointer
+    anim()
+
+    &:hover
+      opacity: .5
+
+.content
+  position: relative
+  z-index: 1
+
+.title
+  fontSerif()
+  font-size: 1.5em
+  letter-spacing: 2px
+  margin-top: .5em
+
+.text
+  line-height: 1.2
+  margin-top: .5em
+  margin-bottom: 2em
+
+.input
+  margin-bottom: 1em
+  padding: 0 1em
