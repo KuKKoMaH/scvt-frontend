@@ -1,25 +1,28 @@
 include ../button/button
 
 .product-wrapper
-  .product-title: h2(data-subtitle='Картины') Модульные картины
-  .product-subtitle Актуально для дизайна интерьера и для подарка!
-  .w.product-content.wc
-    .c.c3
+  .w
+    .c.c12
       .product-menu: ul
-        li: a(href='#') Классические картины
-        li: a(href='#') Модульные картины
+        li: a(href='#') Классические#[br]картины
+        li: a(href='#') Модульные#[br]картины
         li: a(href='#') Фотографии
         li: a(href='#') Фотомозайка
         li: a(href='#') Репродукции
         li: a(href='#') Поп-арт
         li: a(href='#') Арт-портреты
         li: a(href='#') Фотопанно
-    .c.c6
-      .product-slider
-        img(src='modules/product/image.jpg')
-        img(src='modules/product/image.jpg')
-        img(src='modules/product/image.jpg')
-        img(src='modules/product/image.jpg')
+  .product-title: h2(data-subtitle='Картины') Модульные картины
+  .product-subtitle Актуально для дизайна интерьера и для подарка!
+  .w.product-content.wc
+    .c.c9
+      .product-sizes
+        include ../sizes/sizes
+      //.product-slider
+      //  img(src='modules/product/image.jpg')
+      //  img(src='modules/product/image.jpg')
+      //  img(src='modules/product/image.jpg')
+      //  img(src='modules/product/image.jpg')
     .c.c3
       .product-params
         p #[b Изготовление:] 1 день
