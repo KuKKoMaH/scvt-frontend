@@ -85,13 +85,13 @@ $width.css({
   top:       sizes.positionY - (sizes.maxContainerHeight / 2) + '%',
   marginTop: -$width.height() / 2 - 10,
   left:      sizes.positionX + '%',
-});
+}).fadeIn('fast');
 
 $height.css({
   top:        sizes.positionY + '%',
   marginLeft: -$height.width() / 2 - 10,
   left:       sizes.positionX - (sizes.maxContainerWidth / 2) + '%',
-});
+}).fadeIn('fast');
 
 $width.find('.' + sizes_minus).on('click', function () {
   if (width <= sizes.minWidth) return;
