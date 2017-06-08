@@ -1,3 +1,4 @@
+//- var items = ['Скидка растет!', 'Уже на второй заказ!', 'Большая скидка 15%', 'Скидка от объёма!']
 - var items = ['Скидка растет!', 'Уже на второй заказ!', 'Большая скидка 15%', 'Скидка от объёма!']
 .stocks-wrapper: .stocks-container
   .stocks-header: h2(data-subtitle='Скидки') Акции и скидки
@@ -9,6 +10,7 @@
           .stocks-icon: img(src='modules/stocks/icons/stocks-icon-' + (i + 1) + '.svg')
           .stocks-title= item
           .stocks-text Накопительная скидка для вас и ваших друзей.
+          .stocks-more Подробнее
   .stocks-details
     for item, i in items
       .stocks-detail(class=i === 0 ? 'stocks-detail_active' : '' data-tab=i)

@@ -5,6 +5,9 @@
 .bg
   margin: 0 auto
   display: block
+  user-select: none
+  pointer-events: none;
+
 
 .slider
   position: absolute
@@ -23,45 +26,6 @@
 
     .slick-slide
       outline: 0
-
-    .slick-dots
-      position: absolute
-      display: block
-      top: 100%
-      white-space: nowrap
-      left: 50%
-      transform: translateX(-50%)
-      margin: 0
-      text-align: center
-      padding: 0
-
-      li
-        display: inline-block
-        vertical-align: middle
-        width: 18px
-        height: 18px
-        line-height: 18px
-        font-size: 0
-        margin: 0 4px
-        text-align: center
-
-        &.slick-active button
-          background: $red
-          border-color: $red
-          width: 18px
-          height: 18px
-
-      button
-        width: 12px
-        height: 12px
-        background-color: $grey
-        border-radius: 50%
-        border: 2px solid $grey
-        text-indent: -99999px
-        padding: 0
-        display: inline-block
-        vertical-align: middle
-        anim()
 
 .slide
   position: relative
@@ -112,3 +76,47 @@
 .height>*
   display: block
   margin: .5em auto
+
+.thumbs
+  position: absolute
+  overflow: hidden
+  top: 100%
+  width: 100%
+  padding: 0 40px
+  margin-top: 8px
+
+  :global
+    .slick-slide
+      outline: 0
+
+    .slick-arrow
+      position: absolute
+      top: 50%
+      font-size: 0
+      border: 0
+      padding: 0
+      background-color: transparent
+      margin-top: -40px
+      z-index: 1
+      anim()
+
+      &:hover
+        opacity: .8
+
+    .slick-prev
+      left: 0
+      margin-left: -40px
+      background: url(modules/slider/sprite-arrow-left.svg)
+
+    .slick-next
+      right: 0
+      margin-right: -40px
+      background: url(modules/slider/sprite-arrow-right.svg)
+
+
+  &_slider
+    display: block
+
+.thumb
+  position: relative
+  margin: 0 4px

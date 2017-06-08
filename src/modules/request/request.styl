@@ -20,7 +20,7 @@
 .form
   display: block
   max-width: 880px + $gutter
-  margin: 2em auto 0
+  margin: 1em auto 0
   text-align: justify
   padding: 0 $gutter-half
   cf()
@@ -33,6 +33,9 @@
     max-width 320px
     margin: 0 auto 1em
     text-align: center
+
+.input
+  margin-top: $gutter-half
 
 .left
   float: left
@@ -70,3 +73,16 @@
 
   @media (max-width: $breakpoint-sm - 1)
     margin-top: 0
+
+.white
+  roundPlash($white, 'sprite-arrow-down-red.svg')
+
+  .container
+    background: $white
+    padding: 1em 0 4em
+
+  .title
+    color: $red
+
+  .subtitle
+    color: $black

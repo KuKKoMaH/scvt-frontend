@@ -1,11 +1,13 @@
 extends ../../modules/layout/layout
+include ../../modules/request/request
 
 block body
   include ../../modules/header/header
   include ../../modules/product/product
+  +request(true)
   //include ../../modules/sizes/sizes
   include ../../modules/stocks/stocks
-  include ../../modules/request/request
+  //include ../../modules/request/request
   include ../../modules/work/work
   include ../../modules/facts/facts
   include ../../modules/niz/niz

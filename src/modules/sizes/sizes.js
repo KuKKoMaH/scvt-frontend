@@ -1,33 +1,4 @@
 import 'slick-carousel';
-
-// const $picture = $('.' + sizes_picture);
-// let width = $('[name="width"]:checked').val();
-// let height = $('[name="height"]:checked').val();
-//
-// const maxHeight = $('[name="height"]').last().val();
-// const maxWidth = $('[name="width"]').last().val();
-//
-// const maxSize = 40;
-//
-// positionPicture();
-//
-// $('[name="width"]').on('change', function(){
-//   width = $(this).val();
-//   positionPicture();
-// });
-//
-// $('[name="height"]').on('change', function(){
-//   height = $(this).val();
-//   positionPicture();
-// });
-//
-// function positionPicture() {
-//   console.log(width, height);
-//   $picture
-//     .width((maxSize * width / maxWidth ) + '%')
-//     .height((maxSize * height / maxHeight ) + '%')
-// }
-
 const sizes = window.sizes;
 const $slider = $('.' + sizes_slider);
 let width = Math.round((sizes.minWidth + sizes.maxWidth) / 2 / 10) * 10;
@@ -41,13 +12,13 @@ function updateSizes() {
   const percentHeight = sizes.maxContainerHeight * (height / sizes.maxHeight);
   $slider.width(percentWidth + '%');
   $slider.find('.slick-list').height(percentHeight + '%');
-  $slider.slick("setPosition", 0);
+  $slider.slick('setPosition', 0);
 }
 
 function loadImage(index) {
   const $slide = $slick.$slides.eq(index);
   const url = $slide.data('lazy');
-  if(url) {
+  if (url) {
     $slide.css('backgroundImage', 'url(' + url + ')');
     $slide.data('lazy', null);
   }
@@ -55,16 +26,20 @@ function loadImage(index) {
 
 $slider.slick({
   lazyLoad: 'progressive',
-  dots:     true,
+  //dots:     true,
   arrows:   false,
-    // const img = $(event.currentTarget).find("[data-slick-index='"+next_slide_index+"'] img");
-    // const img2 = $(event.currentTarget).find("[data-slick-index='"+(next_slide_index+1)+"'] img");
-    // img.attr('src', img.data('llos-lazy'));
-    // setTimeout(function(){
-    //   img2.attr('src', img2.data('llos-lazy'));
-    // }, 300);
+  asNavFor: '.' + sizes_thumbs_slider,
 }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
   loadImage(nextSlide);
+});
+
+$('.' + sizes_thumbs_slider).slick({
+  slidesToShow:   7,
+  slidesToScroll: 1,
+  asNavFor:       '.' + sizes_slider,
+  centerMode:     true,
+  focusOnSelect:  true,
+  infinite:       true,
 });
 
 const $slick = $slider.slick('getSlick');

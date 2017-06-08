@@ -1,28 +1,30 @@
+- var photos = ['_Ajm-ewEC24', 'kElEigko7PU', 'b1NFkUR-3Fg', 'qvEwMfUX_DM', 'XRRiHEckyU0', 'T9CktnMI8TQ', 'USS2u1-98io', 'DlnK1KOREds']
 .sizes-wrapper
   img.sizes-bg(src='modules/sizes/bg.jpg')
   .sizes-slider
-    .sizes-slide(data-lazy='modules/sizes/picture.png')
-    .sizes-slide(data-lazy='modules/sizes/image.jpg')
-    .sizes-slide(data-lazy='modules/sizes/picture.png')
-    .sizes-slide(data-lazy='modules/sizes/image.jpg')
-    .sizes-slide(data-lazy='modules/sizes/picture.png')
-    .sizes-slide(data-lazy='modules/sizes/image.jpg')
+    for i in photos
+      .sizes-slide(data-lazy='https://source.unsplash.com/' + i + '/320x216')
   .sizes-width
     .sizes-minus
     .sizes-size
     .sizes-plus
   .sizes-height
-    .sizes-minus
-    .sizes-size
     .sizes-plus
+    .sizes-size
+    .sizes-minus
+  .sizes-thumbs
+    .sizes-thumbs_slider
+      for i in photos
+        .sizes-thumb: img(src='https://source.unsplash.com/' + i + '/100x100' )
+
 script.
   var sizes = {
     positionX:          50,
-    positionY:          30,
+    positionY:          28,
     maxContainerWidth:  40,
-    maxContainerHeight: 30,
+    maxContainerHeight: 36,
     minWidth:           20,
     maxWidth:           120,
     minHeight:          20,
-    maxHeight:          70,
+    maxHeight:          90,
   };

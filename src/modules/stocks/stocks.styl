@@ -19,6 +19,7 @@
   font-size: 1.2em
 
 .item
+  position: relative
   border-radius: 8px
   max-width: 270px
   height: 300px
@@ -37,6 +38,9 @@
     box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent
     transform: translateY(6px)
 
+    .more
+      text-decoration: none
+
 .item-1
   background-image linear-gradient(139deg, #ffcd2c, #ff0663)
   box-shadow: 0 21px 21px -13px rgba(#ff0d61, .7), 0 21px 21px -13px rgba(#ff2d58, .7)
@@ -53,17 +57,16 @@
   background-image linear-gradient(139deg, #ffd529, #fead34 50%, #fd8440)
   box-shadow 0 21px 21px -13px rgba(0, 0, 0, 0.15), 0 21px 21px -13px rgba(#fd8c3e, .7)
 
-
 .icon
   text-align: center
-  height: 160px
-  line-height: 160px
+  height: 140px
+  line-height: 140px
   font-size: 0
   color: #fff
 
   @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
-    height: 130px
-    line-height: 130px
+    height: 110px
+    line-height: 110px
 
   img
     display: inline-block
@@ -110,3 +113,10 @@
   &-text
     margin-top: .5em
     line-height: 1.2
+
+.more
+  position: absolute
+  font-size: .8em
+  right: 8px
+  bottom: 8px
+  text-decoration: underline

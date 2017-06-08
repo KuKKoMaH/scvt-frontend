@@ -75,8 +75,6 @@ for $i in (1..9)
   text-decoration: underline
   cursor: pointer
 
-  &:hover
-    text-decoration: none
 
 .popup
   position: absolute
@@ -113,3 +111,9 @@ for $i in (1..9)
 
     &:hover
       opacity: 1
+
+.click
+  cursor: pointer
+
+  &:hover .button
+    text-decoration: none

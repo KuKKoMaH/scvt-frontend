@@ -3,31 +3,39 @@ include ../button/button
 include ../file/file
 include ../select/select
 
-.request-wrapper
-  .request-container
-    .request-title Оставьте заявку
-    .request-subtitle наш консультант свяжется с вами в ближайшее время
-    form.request-form
-      .wf
-        .c.c4.request-input
-          +input()(placeholder='Ваше имя')
-        .c.c4.request-input
-          +input()(type='phone' placeholder='Телефон')
-        .c.c4.request-input
-          +input()(placeholder='Почта')
-      .request-row
-        .request-left
-          +select()
-            option Классические картины
-            option Модульные картины
-            option Фотографии
-            option Фотомозайка
-            option Репродукции Художников
-            option Поп - Арт
-            option Арт - портреты
-            option Фотопанно
-        .request-right
-          +file()
+mixin request(isWhite)
+  .request-wrapper(class=isWhite ? 'request-white' : '')
+    .request-container
+      .request-title Оставьте заявку
+      .request-subtitle наш консультант свяжется с вами в ближайшее время
+      form.request-form
+        .wf
+          .c.c4.request-input
+            +input()(placeholder='Ваше имя')
+          .c.c4.request-input
+            +input()(type='phone' placeholder='Телефон')
+          .c.c4.request-input
+            +input()(placeholder='Почта')
+          if(isWhite)
+            .c.c12.request-input
+              +input()(placeholder='Сообщение')
+        .request-row
+          .request-left
+            if (isWhite)
+              +file('black')
+            else
+              +select()
+                option Классические картины
+                option Модульные картины
+                option Фотографии
+                option Фотомозайка
+                option Репродукции Художников
+                option Поп - Арт
+                option Арт - портреты
+                option Фотопанно
+          if (!isWhite)
+            .request-right
+              +file()
 
-        .request-center
-          +button() отправить
+          .request-center
+            +button() отправить

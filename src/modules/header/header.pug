@@ -2,8 +2,9 @@ include ../button/button
 
 - var menu = ['Продукция', 'Акции', 'О нас', 'Блог', 'Контакты']
 header.header-wrapper#header: .w.wc
-  .c.c1.c4-xs: img.header-logo(src='modules/header/logo.png')
-  .c.c2.c7-xs: .header-title Мастерская Соцветие
+  .c.c3.header-logo
+    img.header-image(src='modules/header/logo.png')
+    .header-title Мастерская#[br]Соцветие
   .c.c6
     nav.header-menu
       ul
@@ -12,5 +13,5 @@ header.header-wrapper#header: .w.wc
 
   .c.c3
     .header-contacts
-      .header-phone 8 812 602 13 82
+      .header-phone #[span.header-code 8 812] 602 13 82
       +button_flat(class='header-callback' href='#callback') заказать звонок

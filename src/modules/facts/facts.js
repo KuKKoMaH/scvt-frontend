@@ -1,12 +1,12 @@
 const $popups = $('.' + facts_popup);
 
-$('.' + facts_button).on('click', function(){
+$('.' + facts_click).on('click', function () {
   const $this = $(this);
+  const popup = $this.parent().find('.' + facts_popup);
   $popups.fadeOut('fast');
-  $this.parent().parent().find('.' + facts_popup).fadeIn('fast');
+  popup.fadeIn('fast');
 });
 
-
-$('.' + facts_popup_close).on('click', function() {
+$('.' + facts_popup_close).on('click', function () {
   $popups.fadeOut('fast');
 });

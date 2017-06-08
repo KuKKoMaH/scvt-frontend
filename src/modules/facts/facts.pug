@@ -4,10 +4,11 @@
   .w
     for item, i in ['Мы любим нашу работу', 'Мы настроены на дружеские отношения', 'Высокое качество', 'Срок - сейчас.', 'Сертифицированные материалы', 'Размеры и сборка', 'Без предоплаты', 'Доставка', 'Оплата любым способом']
       .c.c4.facts-item
-        .facts-icon(class='facts-icon-' + (i + 1))
-        .facts-inner
-          .facts-name: .facts-name_inner= item
-          .facts-button подробнее
+        .facts-click
+          .facts-icon(class='facts-icon-' + (i + 1))
+          .facts-inner
+            .facts-name: .facts-name_inner= item
+            .facts-button подробнее
         .facts-popup
           .facts-popup-title= item
           .facts-popup-text Воспроизведение 99% от всего возможного цветового диапазона (в 2,5 раза больше, чем может воспринять человеческий глаз).
