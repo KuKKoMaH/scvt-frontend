@@ -2,9 +2,9 @@ include ../button/button
 
 - var menu = ['Продукция', 'Акции', 'О нас', 'Блог', 'Контакты']
 header.header-wrapper#header: .w.wc
-  .c.c3.header-logo
+  .c.c3.header-logo: a(href='#')
     img.header-image(src='modules/header/logo.png')
-    .header-title Мастерская#[br]Соцветие
+    .header-title #[span.header-small мастерская]#[br]Соцветие
   .c.c6
     nav.header-menu
       ul

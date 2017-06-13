@@ -1,9 +1,10 @@
 .wrapper
   z-index: 1
-  roundPlash(#7633b7, 'sprite-arrow-down-white.svg')
+  roundPlash(#9acd32, 'sprite-arrow-down-white.svg')
 
 .container
-  background-image linear-gradient(to bottom, #7633b7, #275fbb)
+  //background-image linear-gradient(to bottom, #7633b7, #275fbb)
+  background: #9acd32
   padding: 2em 0
   text-align: center
 
@@ -35,7 +36,7 @@
     text-align: center
 
 .input
-  margin-top: $gutter-half
+  margin-top: $gutter
 
 .left
   float: left
@@ -86,3 +87,8 @@
 
   .subtitle
     color: $black
+
+  :global
+    .wpcf7-not-valid-tip,
+    .wpcf7-response-output
+      color: $red

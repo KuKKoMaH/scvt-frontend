@@ -1,8 +1,8 @@
 import 'slick-carousel';
 const sizes = window.sizes;
 const $slider = $('.' + sizes_slider);
-let width = Math.round((sizes.minWidth + sizes.maxWidth) / 2 / 10) * 10;
-let height = Math.round((sizes.minHeight + sizes.maxHeight) / 2 / 10) * 10;
+let width = sizes.initialWidth;
+let height = sizes.initialHeight;
 
 function updateSizes() {
   $widthHolder.html(width);

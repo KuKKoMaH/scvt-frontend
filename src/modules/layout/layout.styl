@@ -128,3 +128,29 @@ button
     .c{$col}-xs
       @media (max-width: $breakpoint-sm - 1)
         width: round((100 / $cols-number * $col)%, 3)
+
+
+  .screen-reader-response
+    display: none
+
+  .wpcf7-form-control-wrap
+    display: block
+    position: relative
+
+    &.form-file
+      position: static
+
+  .wpcf7-not-valid-tip
+    font-size: 14px
+    text-align: center
+    color: $white
+    position: absolute
+    width: 100%
+    top: 100%
+    left: 0
+
+  .wpcf7-response-output
+    font-size: 15px
+    color: $white
+    display: block
+    margin-top: 10px

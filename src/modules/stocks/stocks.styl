@@ -57,6 +57,13 @@
   background-image linear-gradient(139deg, #ffd529, #fead34 50%, #fd8440)
   box-shadow 0 21px 21px -13px rgba(0, 0, 0, 0.15), 0 21px 21px -13px rgba(#fd8c3e, .7)
 
+for i in 1 2 3 4
+  .icon-{i}
+    background: url('modules/stocks/icons/sprite-stocks-icon-' + i + '.svg')
+
+  .icon-active-{i}
+    background: url('modules/stocks/icons/sprite-stocks-icon-' + i + '-active.svg')
+
 .icon
   text-align: center
   height: 140px
@@ -68,7 +75,7 @@
     height: 110px
     line-height: 110px
 
-  img
+  span
     display: inline-block
     vertical-align: middle
 
@@ -102,6 +109,10 @@
     float: left
     width: 170px
     text-align: center
+
+    span
+      display: inline-block
+      vertical-align: middle
 
   &-content
     font-size: .9em
