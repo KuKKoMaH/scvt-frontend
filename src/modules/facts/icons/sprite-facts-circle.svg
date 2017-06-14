@@ -5,8 +5,8 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
-            <stop stop-color="#005aff" offset="0%"></stop>
-            <stop stop-color="#005aff" offset="100%"></stop>
+            <stop stop-color="#FEB984" offset="0%"></stop>
+            <stop stop-color="#FF5542" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">

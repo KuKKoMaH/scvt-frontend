@@ -1,11 +1,12 @@
 .wrapper
   z-index: 1
-  roundPlash(#ffa500, 'sprite-arrow-down-white.svg')
   //roundPlash(#ff5542, 'sprite-arrow-down-white.svg')
+  roundPlash(#7633b7, 'sprite-arrow-down-white.svg')
   color: $white
 
 .content
-  background: linear-gradient(to bottom, #ffa500, #ffc355)
+  background-image linear-gradient(to bottom, #7633b7, #275fbb)
+  //background: linear-gradient(to bottom, #ffa500, #ffc355)
   //background: linear-gradient(to top, #feb984, #ff8662 51%, #ff8662 51%, #ff5542)
   padding: 2em 0
 
@@ -82,16 +83,17 @@ for $i in (1..9)
   position: absolute
   background: $white
   border-radius: 7px
-  top: 0
+  top: 50%
   left: 0
   padding: 1.5em
   display: none
-  z-index: 1
+  z-index: 3
+  transform: translateY(-50%)
 
   @media (max-width: $breakpoint-sm - 1)
     max-width 400px
     left: 50%
-    transform: translateX(-50%)
+    transform: translate(-50%, -50%)
 
   &-title
     color: $red
